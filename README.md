@@ -14,6 +14,6 @@ To run the test just run `yarn test`
 
 ## Lessons 
 * Lesson 1 
-    * part 1 switch to `lesson` branch
-    * part 2 switch to `lesson-1` branch
+    * part 1 switch to `lesson1` branch
+    * part 2 switch to `lesson1-2` branch
 
