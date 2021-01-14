@@ -16,16 +16,15 @@ const Button: React.FC<ButtonProps> = ({ onClick, className }) => (
   </button>
 );
 
-const App: React.FC<AppProps> = ({ values = ['clicked', 'no clicked'] }) => {
+const App: React.FC<AppProps> = ({ values = ['Active', 'Inactive'] }) => {
   const [state, setState] = React.useState(false);
   const [clicked, notClicked] = values;
   return (
     <div className="App">
-      <h1>
-        {state ? clicked : notClicked}
-        <br />
-      </h1>
-      <Button onClick={() => setState(state => !state)} />
+      <div className="row">
+        <Button onClick={() => setState(state => !state)} />
+        <p>{state ? clicked : notClicked}</p>
+      </div>
     </div>
   );
 };
