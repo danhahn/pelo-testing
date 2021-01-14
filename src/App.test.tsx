@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
 
-test('renders a button', () => {
+test('Ensure that UI updates when state changes', () => {
   const values = ['test1', 'test2'];
 
   const [value1, value2] = values;
