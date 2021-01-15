@@ -10,14 +10,15 @@ test('Render the component', () => {
 
   render(<App values={values} />);
 
-  // const buttonElement = screen.getByText(/button/i);
+  const buttonElement = screen.getByText(/button/i);
 
-  // expect(buttonElement).toBeInTheDocument();
+  expect(buttonElement).toBeInTheDocument();
 
-  // expect(screen.getByText(value2)).toBeInTheDocument();
-  // expect(screen.queryByText(value1)).not.toBeInTheDocument();
+  expect(screen.getByText(value2)).toBeInTheDocument();
+  expect(screen.queryByText(value1)).not.toBeInTheDocument();
 
-  // userEvent.click(buttonElement);
-  // expect(screen.getByText(value1)).toBeInTheDocument();
-  // expect(screen.queryByText(value2)).not.toBeInTheDocument();
+  userEvent.click(buttonElement);
+
+  expect(screen.getByText(value1)).toBeInTheDocument();
+  expect(screen.queryByText(value2)).not.toBeInTheDocument();
 });
