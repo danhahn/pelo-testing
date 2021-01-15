@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({ onClick, className }) => (
   </button>
 );
 
-const App: React.FC<AppProps> = ({ values = ['clicked', 'no clicked'] }) => {
+const App: React.FC<AppProps> = ({ values = ['clicked', 'not clicked'] }) => {
   const [state, setState] = React.useState(false);
   const [clicked, notClicked] = values;
   return (

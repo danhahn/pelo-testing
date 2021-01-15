@@ -4,7 +4,7 @@
   height: 100vh;
 }
 
-.row {
+/* .row {
   display: grid;
   grid-template-columns: auto 100px;
   align-items: center;
@@ -29,7 +29,7 @@ button {
 button.inactive {
   background: white;
   color: rebeccapurple;
-}
+} */
 
 .App-logo {
   height: 40vmin;
